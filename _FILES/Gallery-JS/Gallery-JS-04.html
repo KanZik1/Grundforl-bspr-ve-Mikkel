@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY - JS 04</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .header-main img {
+            width: 100%;
+            display: block;
+        }
+        /* NAVIGATION */
+        .nav-main {
+            background-color: cadetblue;
+        }
+
+        /* SECTION GALLERY */
+        .section-gallery div {
+            display: grid;
+            gap: 0.5em;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .section-gallery img {
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER - MAIN -->
+    <header class="header-main">
+        <img src="assets/images/Header-bg.png">
+    </header>
+    <!-- NAVIGATION MAIN -->
+    <nav class="nav-main">NAVIGATION</nav>
+    <!-- SECTION GALLERY -->
+    <section class="section-gallery">
+            <!-- THE "ORIGINAL IMAGE" THAT IS LOADED VIA THE SRC -->
+            <img src="assets/images/Uploads/Sorry.png" id="imgLarge">
+            
+            <!-- THE CONTAINER ELEMENT (DIV IN THIS CASE) HAS CLASSNAME "imgCon" (Image Container)? -->
+            <div>
+                <!-- EVERY ELEMENT: "IMG" ("this") HAS A DIFFERENT SOURCE, WHICH WILL REPLACE THE "ORIGINAL ONE" ON "ID:'image-large'" onclick ;0) -->
+                <img src="assets/images/Uploads/Uploads-01.png">
+                <img src="assets/images/Uploads/Uploads-02.png">
+                <img src="assets/images/Uploads/Uploads-03.png">
+                <img src="assets/images/Uploads/Uploads-04.png">
+                <img src="assets/images/Uploads/Uploads-05.png">
+                <img src="assets/images/Uploads/Uploads-06.png">
+            </div>
+    </section>
+    <script>
+        // "let imgSrc" VÆLGER ELEMENTERNE: "IMG" I GALLERY: ("getElementsByTagName")
+            let imgSrc = document.getElementsByTagName("img");
+        //SKIFTER "SRC" (STIEN) UD PÅ: "#imgLarge" MED "DEN FRA "imgsrc" / (foreach element)? XD
+            let imgCon = document.querySelector("#imgLarge");
+            Array.from(imgSrc).forEach((element) => {
+            element.addEventListener("click", () => {
+            console.log(element);
+            imgCon.src = element.src;
+            });
+        });
+    </script>
+</body>
+</html>

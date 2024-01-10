@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY - JS 03?</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .header-main img {
+            width: 100%;
+            display: block;
+        }
+        /* NAVIGATION */
+        .nav-main {
+            background-color: cadetblue;
+        }
+
+        /* SECTION GALLERY */
+
+        .section-gallery div div {
+            display: grid;
+            gap: 0.5em;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .section-gallery img {
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER - MAIN -->
+    <header class="header-main">
+        <img src="assets/images/Header-bg.png">
+    </header>
+    <!-- NAVIGATION MAIN -->
+    <nav class="nav-main">NAVIGATION</nav>
+    <!-- SECTION GALLERY -->
+    <section class="section-gallery">
+        <div>
+            <!-- THE "ORIGINAL IMAGE" THAT IS LOADED VIA THE SRC -->
+            <img src="assets/images/Uploads/Sorry.png" id="image-large">
+            
+            <!-- THIS CARRIES THE STYLE: .section-gallery div div! -->
+            <div>
+                <!-- EVERY ELEMENT: "IMG" ("this") HAS A DIFFERENT SOURCE, WHICH WILL REPLACE THE "ORIGINAL ONE" ON "ID:'image-large'" onclick ;0) -->
+                <img src="assets/images/Uploads/Uploads-01.png" class="imgCon">
+                <img src="assets/images/Uploads/Uploads-02.png" class="imgCon">
+                <img src="assets/images/Uploads/Uploads-03.png" class="imgCon">
+                <img src="assets/images/Uploads/Uploads-04.png" class="imgCon">
+                <img src="assets/images/Uploads/Uploads-05.png" class="imgCon">
+                <img src="assets/images/Uploads/Uploads-06.png" class="imgCon">
+            </div>
+        </div>
+        <script>
+        // giv alle de billeder der skal vises i et andet billede "den class den styles efter": ("imgCon")
+        let imgSrc = document.getElementsByClassName("imgCon");
+        //id på det billede der skal erstattes
+        let imgCon = document.querySelector("#image-large");
+
+        Array.from(imgSrc).forEach((element) => {
+        element.addEventListener("click", () => {
+       //console.log(element);
+        imgCon.src = element.src;
+            });
+        });
+        </script>
+    </section>
+</body>
+
+</html>

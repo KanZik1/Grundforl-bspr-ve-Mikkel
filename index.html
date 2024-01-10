@@ -1,13 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blibado</title>
+    <link rel="icon" href="assets/images/Icon.svg">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/header-main.css">
+    <link rel="stylesheet" href="assets/css/mediaquiries.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
 </head>
+
 <body>
-    
+
+    <!-- HEADER MAIN  -->
+
+    <header class="header-main">
+        <h1><span class="blue">bli</span><span class="orange">ba</span><span class="red">do</span><sup>&#169;</sup>
+        </h1>
+        <h2>Vi ved hvor du bor!</h2>
+
+
+    </header>
+
+    <!-- GLOBAL NAVIGATION  -->
+
+    <nav class="nav-main">
+
+        <ul>
+            <li><a href="#omos">Om os</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#aktuelt">Aktuelt</a></li>
+            <li id="signupLink"><a href="#">SignUp</a></li>
+        </ul>
+    </nav>
+
+    <!-- MODAL / FORM  -->
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <!-- Form Fields -->
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="surname" placeholder="Surname" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div id="successMessage" style="color: green; display: none;"></div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT  -->
+
+    <main class="main-content">
+
+        <!-- SECTION ONE ABOUT -->
+
+        <section class="section-one">
+            <header>
+                <h1 class="about" id="omos">Om os</h1>
+            </header>
+            <div class="wrapping">
+                <figure class="figure-one">
+                    <video src="assets/images/Media/pexels-taryn-elliott-9583751 (720p).mp4" muted autoplay
+                        loop></video>
+                </figure>
+                <article class="article-one">
+                    <header>
+                        <h3>Begyndelsen</h3>
+                    </header>
+                    <p>BliBaDO begyndte i 2018 da to udviklere var værter for tre rejsende, der ledte efter et sted
+                        at
+                        bo.
+                        Nu har millioner af værter og gæster oprettet en gratis BliBaDo-konto.
+                    </p>
+                    <p>Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er
+                        der
+                        millioner af fantastiske steder at besøge.
+                    </p>
+                    <p>Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og
+                        overføre
+                        betalinger.
+                    </p>
+
+                    <a href="#">Læs Mere:</a>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION TWO CARDS -->
+
+        <h1 id="locations"> Locations</h1>
+        <section class="section-two">
+
+            <!-- CARD ONE  -->
+
+            <article class="article-one">
+
+                <figure class="article-images">
+                    <img src="assets/images/GFX/Location-01-01.jpg" alt="location-one">
+                </figure>
+                <header>
+                    <h1>Location One</h1>
+                </header>
+                <ul class="list-one">
+                    <h3>Antal Sovepladser:</h3>
+                    <li>Voksne: 2</li>
+                    <li>Børn: 3</li>
+                    <h3>Facilliteter:</h3>
+                    <li>Vask: Ja</li>
+                    <h3>Reservation</h3>
+                    <li>
+                        <p>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                            om
+                            mindre.
+                        </p>
+                    </li>
+                    <h3>Pris / Døgn:</h3>
+                    <li>Kr.: 600,-</li>
+                    <h3>Beskrivelse:</h3>
+                    <li>
+                        <p>Lejligheden ligger i en gammel bygning med højt til loftet, masser af lys og en balkon,
+                            der
+                            vender lige mod syd, så du kan nyde solopgangen og solnedgangen med udsigt over havet og
+                            den
+                            lille havn.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- CARD TWO -->
+
+            <article class="article-one">
+
+                <figure class="article-images">
+                    <img src="assets/images/GFX/Location-02-01.jpg" alt="location-one">
+                </figure>
+                <header>
+                    <h1>Location Two
+                    </h1>
+                </header>
+                <ul class="list-one">
+                    <h3>Antal Sovepladser:</h3>
+                    <li>Voksne: 4</li>
+                    <li>Børn: 4</li>
+                    <h3>Facilliteter:</h3>
+                    <li>Vask: Nej</li>
+                    <h3>Reservation</h3>
+                    <li>
+                        <p>Minimum reservation er 2 nætter.
+
+                        </p>
+                    </li>
+                    <h3>Pris / Døgn:</h3>
+                    <li>Kr.: 550,-</li>
+                    <h3>Beskrivelse:</h3>
+                    <li>
+                        <p>Nyd udsigten fra den store balkon i en klassisk møbleret lejlighed. Du har adgang til: En
+                            entre med et toilet (mulighed for bruser), to store værelser eget badeværelse, godt
+                            køkken
+                            og to soveværelser.
+
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- CARD THREE  -->
+
+            <article class="article-one">
+
+                <figure class="article-images">
+                    <img src="assets/images/GFX/Location-03-01.jpg" alt="location-one">
+                </figure>
+                <header>
+                    <h1>Location Three
+                    </h1>
+                </header>
+                <ul class="list-one">
+                    <h3>Antal Sovepladser:</h3>
+                    <li>Voksne: 3</li>
+                    <li>Børn: 4</li>
+                    <h3>Facilliteter:</h3>
+                    <li>Vask: Nej</li>
+                    <h3>Reservation</h3>
+                    <li>
+                        <p>Minimum reservation er 5 nætter.
+
+
+                        </p>
+                    </li>
+                    <h3>Pris / Døgn:</h3>
+                    <li>Kr.: 650,-</li>
+                    <h3>Beskrivelse:</h3>
+                    <li>
+                        <p>62 kv/m lejlighed med en fantastisk udsigt og privat parkeringsplads mod et ekstra gebyr.
+                            Ti
+                            minutters gang til en shoppingmole Fisketorvet. Nyd solrige aftener på en balkon med en
+                            kold
+                            drink.
+
+
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- CARD FOUR  -->
+
+            <article class="article-one">
+
+                <figure class="article-images">
+                    <img src="assets/images/GFX/Location-04-01.jpg" alt="location-one">
+                </figure>
+                <header>
+                    <h1>Location Four
+                    </h1>
+                </header>
+                <ul class="list-one">
+                    <h3>Antal Sovepladser:</h3>
+                    <li>Voksne: 2</li>
+                    <li>Børn: 3</li>
+                    <h3>Facilliteter:</h3>
+                    <li>Vask: Ja</li>
+                    <h3>Reservation</h3>
+                    <li>
+                        <p>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                            om
+                            mindre.
+                        </p>
+                    </li>
+                    <h3>Pris / Døgn:</h3>
+                    <li>Kr.: 600,-</li>
+                    <h3>Beskrivelse:</h3>
+                    <li>
+                        <p>Bygning med højt til loftet, masser af lys og sydvendt balkon, så du kan nyde udsigten
+                            over
+                            den idylliske havn. Køkken og spisestue er veludrustet og forbundet med en dobbeltdør.
+
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- CARD FIVE -->
+
+            <article class="article-one">
+
+                <figure class="article-images">
+                    <img src="assets/images/GFX/Location-05-01.jpg" alt="location-one">
+                </figure>
+                <header>
+                    <h1>Location Five
+                    </h1>
+                </header>
+                <ul class="list-one">
+                    <h3>Antal Sovepladser:</h3>
+                    <li>Voksne: 2</li>
+                    <li>Børn: 4</li>
+                    <h3>Facilliteter:</h3>
+                    <li>Vask: Ja</li>
+                    <h3>Reservation</h3>
+                    <li>
+                        <p>Minimum reservation er 2 nætter.
+
+                        </p>
+                    </li>
+                    <h3>Pris / Døgn:</h3>
+                    <li>Kr.: 550,-</li>
+                    <h3>Beskrivelse:</h3>
+                    <li>
+                        <p>Nyd udsigten over København fra den store balkon og slappe af i en rummelig klassisk
+                            møbleret
+                            lejlighed. Du har adgang til: En entre med et toilet, to store værelser, godt køkken og
+                            to
+                            soveværelser.
+
+
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- CARD SIX -->
+
+            <article class="article-one">
+
+                <figure class="article-images">
+                    <img src="assets/images/GFX/Location-06-01.jpg" alt="location-one">
+                </figure>
+                <header>
+                    <h1>Location Six
+                    </h1>
+                </header>
+
+                <ul class="list-one">
+                    <h3>Antal Sovepladser:</h3>
+                    <li>Voksne: 2</li>
+                    <li>Børn: 4</li>
+                    <h3>Facilliteter:</h3>
+                    <li>Vask: Nej</li>
+                    <h3>Reservation</h3>
+                    <li>
+                        <p>Minimum reservation er 6 nætter.
+
+                        </p>
+                    </li>
+                    <h3>Pris / Døgn:</h3>
+                    <li>Kr.: 950,-</li>
+                    <h3>Beskrivelse:</h3>
+                    <li>
+                        <p>LakeView Cabin er en traditionel træhytte, nyrenoveret i eksotisk stil. Direkte adgang
+                            til
+                            stranden, udendørs bruser og sauna. Perfekt til par, livsnydere og naturelskere.
+
+
+
+                        </p>
+                    </li>
+                </ul>
+
+            </article>
+        </section>
+
+        <!-- SECTION THREE GALLERY -->
+
+        <h1 class="blue-one" id="aktuelt">Aktuelt</h1>
+        <section class="section-three">
+            <div class="container-big">
+                <img src="assets/images/GFX/Location-06-04.jpg" id="image-large">
+                <div class="grid-container">
+                    <img src="assets/images/GFX/Location-06-01.jpg"
+                        onclick="document.getElementById('image-large').src=this.src">
+                    <img src="assets/images/GFX/Location-06-02.jpg"
+                        onclick="document.getElementById('image-large').src=this.src">
+                    <img src="assets/images/GFX/Location-06-03.jpg"
+                        onclick="document.getElementById('image-large').src=this.src">
+                    <img src="assets/images/GFX/Location-06-04.jpg"
+                        onclick="document.getElementById('image-large').src=this.src">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SECTION FOUR  -->
+
+    <footer>
+        <section class="section-four">
+            <article class="footer-one">
+                <header>
+                    <h2>Din Lokation:</h2>
+                </header>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.208802607778!2d9.964551177162107!3d57.04796537359109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464932b69856edb3%3A0xe12d94d82c0b02c7!2sTECHCOLLEGE!5e0!3m2!1sen!2sdk!4v1704877764754!5m2!1sen!2sdk"
+                    width="285" height="165"></iframe>
+            </article>
+
+            <article class="footer-two">
+                <header>
+                    <h2>Informationer:</h2>
+                    <ul>
+                        <li>Boulevarden 29,</li>
+                        <li>9000 Aalborg</li>
+                        <li><a href="">3344 5566</a></li>
+                        <li><a href="">info@blibado.dk</a></li>
+                        <li>CVR: 5533 66 7788</li>
+                        <li>Made By: Mikkel Christensson</li>
+                    </ul>
+                </header>
+            </article>
+        </section>
+    </footer>
 </body>
+
 </html>

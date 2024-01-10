@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+:root {
+    --light: #ddd;
+    --medium: #999;
+    --dark: #333;
+    --black: #212121;
+    --headings: #32729b;
+    --logo-blue: #377fac;
+    --logo-yellow: #e7901e;
+    --logo-red: #bc4428;
+    --static: #44ccee;
+    --active: #00ff84;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*"SMOOCH SANS" IS A GOOGLE FONT*/
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: var(--light);
+    border: 1px solid #212121;
+}
+
+main {
+    margin: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* SECTIONS  */
+
+/* SECTION ONE  */
+
+.section-one h1 {
+    color: var(--headings);
+    font-weight: 500;
+
+}
+
+.about {
+    margin: 1rem;
+    font-size: 6vw;
+}
+
+.section-one video {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.section-one .article-one h3 {
+    font-weight: 300;
+    margin: 0;
+
+}
+
+.section-one figure {
+    margin: 0;
+}
+
+.section-one a {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--headings);
+}
+
+/* GENERELLE CSS ATTRIBUTES */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
+ul h3 {
+    color: var(--headings);
+    font-weight: 500;
+    margin: 0rem;
+}
+
+article h1 {
+    color: var(--headings);
+    font-size: 5vw;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+.list-one {
+    gap: 1rem;
+}
+
+ul p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+/* CARDS BILLEDER  */
+
+.article-images {
+    margin-top: 1rem;
+}
+
+.article-images img {
+    width: 100%;
+}
+
+
+/* ARTICLE ONE  */
+
+.article-one ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.article-one h3 {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: var(--headings);
+
+}
+
+.article-one ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* SECTION THREE  */
+
+/* .section-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+} */
+
+
+
+.section-three figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    background-color: var(--dark);
+}
+
+.section-four {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.footer-two ul li {
+    list-style: none;
+    color: var(--headings);
+    font-size: 4vw;
+}
+
+.footer-two ul li a {
+    color: var(--static);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-four h2 {
+    color: var(--static);
+    font-weight: 500;
+}
+
+.container-big {
+    gap: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.blue-one {
+    color: var(--headings);
+    font-weight: 300;
+}

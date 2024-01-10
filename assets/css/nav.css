@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+:root {
+    --light: #ddd;
+    --medium: #999;
+    --dark: #333;
+    --black: #212121;
+    --headings: #32729b;
+    --logo-blue: #377fac;
+    --logo-yellow: #e7901e;
+    --logo-red: #bc4428;
+    --static: #44ccee;
+    --active: #00ff84;
+}
+
+.nav-main {
+    background-color: var(--dark);
+}
+
+.nav-main ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 1rem;
+
+}
+
+.nav-main ul li {
+    list-style: none;
+}
+
+.nav-main ul li a:hover {
+    background-color: var(--black);
+    transition: 400ms;
+}
+
+.nav-main ul li a {
+    color: var(--light);
+    text-decoration: none;
+
+}
+
+.nav-main ul li:last-child a {
+    color: var(--headings);
+}

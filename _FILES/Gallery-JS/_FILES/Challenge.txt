@@ -1,0 +1,34 @@
+Lidt om sektioner og artikler
+Definition af sektioner.
+Sektioner kan være områder af "relateret" indhold.
+Artikel Eet
+Noget om artikler
+En artikel kan være tekst, som er publiceret (udgivet) i en avis eller andet nyhedsmedie. Større og grundige artikler findes for det meste i aviser, som er bag en betalings-mur Fx et abonnement, eller som enkeltkøb. Andre aviser er delvist eller helt sponsorede af reklamer.
+
+Artikler er normalvis en "faktuel" tekst der handler om et bestemt emne, artikler kan kort betegnes som "en sammenhængende tekst der kan læses, og giver mening i sig selv", artikler kan indeholde, overskrifter, fodnoter, billeder mm.
+
+En artikel er altså en "sammenhængende tekst", der kan læses i sin helhed, og giver mening i sig selv. Større og grundige artikler findes for det meste i aviser, og er ofte opdelt i "kolonner" eller "spalter" for at øge læsevenligheden. Kolonner til skærm er ofte 50 - 60 tegn i bredden
+
+Om artikler:
+
+
+Artikel To
+Mere om artikler
+Sektioner indeholder ofte mange artikler, der f.eks. behandler enkelte områder i disse sektioner? (Nyhedssektionen eller Sportssektionen). Artiklers vigtigste formål, er at behandle og / eller beskrive et enkelt emne, artikler kan oftest beskrive afslutte et emne.
+
+Nyhedsartikler i en avis kan f.eks. fortæller om en bestemt nyhed. Informere om hvad der er sket, hvornår det er sket, hvem der er involveret osv. Altså et enkelt emne indenfor samme kategori/sektion (Eks. Sportssektionen?).
+
+Kolonner (Spalter i en avis), bliver først og fremmest brugt til at gøre teksten læsevenlig! En "Kolonnebredde" på 50 til 60 "tegn" afhængigt af "Font" og tekstens "kompleksitet" er anbefalet til artikler på skærm.
+
+Mere om artikler:
+
+
+Artikel Tre
+Lidt om fonte og farver
+Udover at opdele sektioners tekst og indhold generelt i artikler, er "fonten" eller den "teksttype" (fontfamily) du anvender ret vigtig, både i forhold til læsevenligheden, og også det "grafiske udtryk" af både artikel og siden som helhed!
+
+Kontraster mellem tekstens "baggrund" og indholdet kan være anstrengende for øjet hvis den er for stor. Browsere viser normalt baggrund som hvid (#ffffff;) og Tekst som Sort: (#000000;) hvilket er en stor kontrast.
+
+"Teksttypen" eller "fonten" er iøvrigt også et vigtigt redskab når du arbejder med tekst. Groft sagt siger man at "serif-font" (Fonte med "fødder") er til papir, og "Sans-Serif" (Uden fødder) er til skærm. Med de nye skærme i høj opløsning kan dette dog diskuteres?
+
+Endnu mere om artikler:

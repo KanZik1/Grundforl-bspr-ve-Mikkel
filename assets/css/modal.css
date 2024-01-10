@@ -1,0 +1,52 @@
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* Additional CSS to style the input fields */
+#signupForm input {
+    display: block;
+    /* Makes input elements stack vertically */
+    width: 90%;
+    /* Adjust the width as needed */
+    padding: 10px;
+    /* Adds padding inside the input fields */
+    margin: 10px auto;
+    /* Adds margin for spacing and centers the input fields */
+    border: 1px solid #ccc;
+    /* Adds a border to the input fields */
+}
+
+/* Style the submit button similarly, if desired */
+#signupForm button {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #4CAF50;
+    /* Example button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for button */
+#signupForm button:hover {
+    background-color: #45a049;
+}
